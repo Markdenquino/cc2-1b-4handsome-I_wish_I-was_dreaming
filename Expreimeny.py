@@ -1,3 +1,15 @@
+#BASE BASE
+setup_game()
+while True:
+    cmd = get_player_input()
+    do_stuff_with_player_input(cmd)
+    update_state_of_the_game()
+    if game_won() or game_lost():
+        break
+    show_game_state_to_player()
+    
+#ito ang base base
+
 import pygame
 import sys
 
